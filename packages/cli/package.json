@@ -21,7 +21,7 @@
   "devDependencies": {
     "typescript": "^5.8.3"
   },
-  "description": "The envo CLI \u2014 portable, encrypted agent environments",
+  "description": "The envo CLI — portable, encrypted agent environments",
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
