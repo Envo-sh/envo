@@ -1,0 +1,32 @@
+{
+  "name": "@envo/cli",
+  "version": "0.9.1",
+  "private": true,
+  "type": "module",
+  "bin": {
+    "envo": "./src/index.ts"
+  },
+  "scripts": {
+    "dev": "bun run src/index.ts",
+    "build": "bun build src/index.ts --outdir dist --target bun",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "build:bin": "bun build src/index.ts --compile --outfile dist/envo",
+    "build:bin:all": "bun build src/index.ts --compile --target=bun-darwin-arm64 --outfile dist/envo-darwin-arm64 && bun build src/index.ts --compile --target=bun-linux-arm64 --outfile dist/envo-linux-arm64 && bun build src/index.ts --compile --target=bun-linux-x64 --outfile dist/envo-linux-x64"
+  },
+  "dependencies": {
+    "@envo/core": "workspace:*",
+    "citty": "^0.1.6",
+    "consola": "^3.4.2"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.3"
+  },
+  "description": "The envo CLI \u2014 portable, encrypted agent environments",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Envo-sh/envo.git",
+    "directory": "packages/cli"
+  },
+  "homepage": "https://envo.sh"
+}

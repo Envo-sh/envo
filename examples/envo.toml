@@ -1,0 +1,14 @@
+# Optional team defaults — local state lives in .envo/ (gitignored)
+
+[project]
+name = "example"
+
+[profiles.dev]
+
+[profiles.prod]
+
+[agents.pi]
+skills = ["envo/pi"]
+
+[agents.codex]
+skills = ["envo/codex"]

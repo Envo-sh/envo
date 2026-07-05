@@ -1,0 +1,28 @@
+{
+  "name": "@envo/core",
+  "version": "0.9.1",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "default": "./src/index.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "bun test"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.3"
+  },
+  "description": "Envo core: client-side encryption, packing, and materialization for agent environments",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Envo-sh/envo.git",
+    "directory": "packages/core"
+  },
+  "homepage": "https://envo.sh"
+}
